@@ -108,7 +108,7 @@ def agent_loop(query: str, max_iterations=20):
 # ------------------------------
 st.set_page_config(page_title="Agentic AI Chat", page_icon="🤖")
 
-st.title("🤖 Agentic AI Chat with Tools")
+st.title("🤖 Welcome to Kepler Agent")
 
 # Store chat history
 if "messages" not in st.session_state:
@@ -133,3 +133,4 @@ if prompt := st.chat_input("Ask me anything..."):
     st.session_state.messages.append({"role": "assistant", "content": response})
     with st.chat_message("assistant"):
         st.markdown(response)
+
